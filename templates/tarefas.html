@@ -1,0 +1,15 @@
+<html>
+    <head>
+       <title>musicccc</title>
+       <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+             Aqui fica a lista de tarefas
+             {{lista}}
+         <form action="/add" method="post">
+            <input type="text" name="nova">
+            <button type="submit">adicionar</button>
+         </form>
+    </body>
+
+</html>
