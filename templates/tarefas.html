@@ -4,17 +4,20 @@
        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     </head>
     <body>
-        Aqui fica a lista de tarefas
+        
+        <div class="cartao"> 
+
+        <h1>Lista de Tarefas!</h1>
 
         {% if lista %}
              <ol>
              {% for item in lista %}
                  <li>{{ item }}</li>
-                 <a href="/delete/{{loop.index0}}"><button>Excluir</button></a>
+                 <a href="/delete/{{loop.index0}}"><button class="Lixo">Excluir</button></a>
              {% endfor %}
             </ol>
         {% else %}
-             <p> Não há items! Parabéns! Você fez tudo das tarefas</p>
+             <p> Não há items, parabéns! Você fez todas as tarefas.</p>
         {% endif %}
 
 
@@ -22,6 +25,7 @@
             <input type="text" name="nova">
             <button type="submit">adicionar</button>
         </form>
+        </div>
     </body>
 
 </html>

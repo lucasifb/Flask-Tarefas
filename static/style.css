@@ -1,30 +1,47 @@
 body{background-color:rgb(154, 180, 150)}
 
-.cartao{
-    margin: auto;
-    width: 400px; 
-    background-color:darkgrey;
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 20px;
-}
 
-label{width: 100%;}
 input{width: 100%;
       margin-bottom: 20px;
-      border-radius:4px;
-      padding:5px;
+      border-radius:10px;
+      padding:10px;
 }
 button{
     background-color:rgb(90, 105, 88);
     color:honeydew;
-    border-width: 5px;
-   border-radius:4px;
-   padding: 6px;
+    border-width: 2px;
+   border-radius:5px;
+   padding: 7px;
    width:100%;
    font-size: 15px;
 }
 
+
+.Lixo{
+    background-color: rgb(74, 82, 72);
+    width:auto;
+    padding: 6px;
+    border-radius: 25px;
+    align-items: center;
+}
+
+
 h1{
-    text-align: center;
+    text-align:center;
+    font-size: 35px;
+    color:rgb(27, 43, 23);
+}
+
+p{
+    text-align:center;
+    color:rgb(58, 94, 67);
+}
+
+
+.cartao{
+    border-radius: 25px;
+    background-color:rgb(199, 216, 195);
+    margin:auto;
+    padding: 20px;
+    max-width:520px; /*Limita o tamanho */
 }
